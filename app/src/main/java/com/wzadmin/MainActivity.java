@@ -40,7 +40,8 @@ public class MainActivity extends Activity {
                 view.loadUrl(js);
             }
         });
-
+        
+        webView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
         webView.loadUrl(ADMIN_URL);
     }
 
